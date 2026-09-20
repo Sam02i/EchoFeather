@@ -1,0 +1,11 @@
+torch
+torchvision
+librosa
+soundfile
+gradio
+requests
+scikit-learn
+pandas
+matplotlib
+tqdm
+Pillow

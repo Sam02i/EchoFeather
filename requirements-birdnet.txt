@@ -1,0 +1,14 @@
+# Install this in a SEPARATE environment on Python 3.11 or 3.12 -- not the
+# main venv. TensorFlow (needed by birdnetlib) does not yet publish wheels
+# for Python 3.14, so mixing this into requirements.txt breaks the whole
+# install on newer Python.
+#
+#   conda create -n birdnet python=3.11 -y
+#   conda activate birdnet
+#   pip install -r requirements-birdnet.txt
+
+birdnetlib
+tensorflow
+librosa
+soundfile
+requests

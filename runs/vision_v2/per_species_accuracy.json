@@ -1,0 +1,22 @@
+{
+  "Acridotheres_tristis": 0.8064516129032258,
+  "Anastomus_oscitans": 0.7,
+  "Ardea_cinerea": 0.8166666666666667,
+  "Bubulcus_coromandus": 0.7666666666666667,
+  "Cinnyris_asiaticus": 0.7666666666666667,
+  "Columba_livia": 0.855072463768116,
+  "Copsychus_saularis": 0.5161290322580645,
+  "Coracias_benghalensis": 0.8666666666666667,
+  "Corvus_splendens": 0.7301587301587301,
+  "Dicrurus_macrocercus": 0.90625,
+  "Halcyon_smyrnensis": 0.6333333333333333,
+  "Merops_orientalis": 0.84375,
+  "Milvus_migrans": 0.8405797101449275,
+  "Orthotomus_sutorius": 0.8,
+  "Passer_domesticus": 0.8412698412698413,
+  "Psittacula_krameri": 0.8307692307692308,
+  "Pycnonotus_cafer": 0.6363636363636364,
+  "Streptopelia_decaocto": 0.8333333333333334,
+  "Threskiornis_melanocephalus": 0.7333333333333333,
+  "Vanellus_indicus": 0.7
+}
