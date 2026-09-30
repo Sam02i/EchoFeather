@@ -33,9 +33,9 @@ CHUNK_SECONDS = 5
 N_MELS = 128
 
 
-def clip_to_spectrogram_images(audio_path, out_dir, clip_id):
+def clip_to_spectrogram_images(audio_path, out_dir, clip_id, max_seconds=None):
     try:
-        y, sr = librosa.load(audio_path, sr=SAMPLE_RATE, mono=True)
+        y, sr = librosa.load(audio_path, sr=SAMPLE_RATE, mono=True, duration=max_seconds)
     except Exception as e:
         print(f"    could not load {audio_path.name}: {e}")
         return 0

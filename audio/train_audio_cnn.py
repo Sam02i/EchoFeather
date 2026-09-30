@@ -60,6 +60,7 @@ def per_species_accuracy(labels, preds, class_names):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data_dir", required=True)
+    ap.add_argument("--workers", type=int, default=0)
     ap.add_argument("--epochs", type=int, default=20)
     ap.add_argument("--batch_size", type=int, default=32)
     ap.add_argument("--lr", type=float, default=1e-3)
@@ -80,23 +81,29 @@ def main():
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
     ])
-    full_ds = datasets.ImageFolder(args.data_dir, transform=tf)
-    class_names = full_ds.classes
+    root = Path(args.data_dir)
+    if (root / "train").is_dir() and (root / "val").is_dir():
+        train_ds = datasets.ImageFolder(root / "train", transform=tf)
+        val_ds = datasets.ImageFolder(root / "val", transform=tf)
+        if train_ds.classes != val_ds.classes:
+            raise ValueError("Training and validation species must match.")
+        class_names = train_ds.classes
+    else:
+        full_ds = datasets.ImageFolder(root, transform=tf)
+        class_names = full_ds.classes
+        val_size = max(1, int(len(full_ds) * args.val_split))
+        train_ds, val_ds = random_split(full_ds, [len(full_ds) - val_size, val_size],
+                                       generator=torch.Generator().manual_seed(42))
     (out_dir / "classes.json").write_text(json.dumps(class_names, indent=2))
 
-    val_size = int(len(full_ds) * args.val_split)
-    train_size = len(full_ds) - val_size
-    train_ds, val_ds = random_split(full_ds, [train_size, val_size],
-                                     generator=torch.Generator().manual_seed(42))
-
-    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, num_workers=4)
-    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=4)
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, num_workers=args.workers)
+    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
 
     model = SmallAudioCNN(len(class_names)).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     criterion = nn.CrossEntropyLoss()
 
-    best_acc = 0.0
+    best_acc = -1.0
     history = []
     for epoch in range(1, args.epochs + 1):
         model.train()

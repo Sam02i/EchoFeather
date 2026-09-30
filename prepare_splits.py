@@ -31,7 +31,7 @@ def main():
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--val_frac", type=float, default=0.2)
     ap.add_argument("--test_frac", type=float, default=0.0,
-                     help="only used for --kind audio; held out for benchmark_birdnet.py")
+                    help="only used for --kind audio; held out for benchmark_birdnet.py")
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 

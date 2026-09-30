@@ -1,11 +1,10 @@
 """
 Step 1: Make the vision model actually good.
 
-Adds the stuff you skipped the first time around:
-  - real data augmentation (random crop, flip, color jitter) to handle the
+- real data augmentation (random crop, flip, color jitter) to handle the
     angle/lighting/background variation the job posting calls out
-  - unfreezing more layers for a deeper fine-tune, not just the head
-  - per-species accuracy + a confusion matrix, so you can honestly report
+- unfreezing more layers for a deeper fine-tune, not just the head
+- per-species accuracy + a confusion matrix, so you can honestly report
     *which* species get confused with which, not just a top-line number
 
 Expected data layout (standard torchvision ImageFolder format):
@@ -151,9 +150,9 @@ def main():
     ap.add_argument("--batch_size", type=int, default=32)
     ap.add_argument("--lr", type=float, default=1e-4)
     ap.add_argument("--unfreeze_from", default="layer3",
-                     choices=["layer1", "layer2", "layer3", "layer4", "fc"])
+                    choices=["layer1", "layer2", "layer3", "layer4", "fc"])
     ap.add_argument("--pretrained_ckpt", default=None,
-                     help="optional: path to your existing head-only fine-tuned checkpoint")
+                    help="optional: path to your existing head-only fine-tuned checkpoint")
     ap.add_argument("--out_dir", default="runs/vision_v2")
     args = ap.parse_args()
 
@@ -188,7 +187,7 @@ def main():
 
     trainable = [p for p in model.parameters() if p.requires_grad]
     print(f"Training {sum(p.numel() for p in trainable):,} params "
-          f"(unfrozen from {args.unfreeze_from} onward)")
+        f"(unfrozen from {args.unfreeze_from} onward)")
 
     optimizer = torch.optim.Adam(trainable, lr=args.lr)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
@@ -203,7 +202,7 @@ def main():
 
         print(f"[{epoch}/{args.epochs}] train_acc={train_acc:.3f} val_acc={val_acc:.3f}")
         history.append({"epoch": epoch, "train_loss": train_loss, "train_acc": train_acc,
-                         "val_loss": val_loss, "val_acc": val_acc})
+                        "val_loss": val_loss, "val_acc": val_acc})
 
         if val_acc > best_acc:
             best_acc = val_acc

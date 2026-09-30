@@ -1,0 +1,495 @@
+{
+  "recordings": 81,
+  "evaluated": 80,
+  "skipped": 1,
+  "top1_accuracy": 0.3,
+  "top5_accuracy": 0.6625,
+  "max_seconds": 30,
+  "results": [
+    {
+      "file": "Acridotheres_tristis/369018.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Acridotheres_tristis/464285.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Acridotheres_tristis/507717.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Acridotheres_tristis/609517.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Acridotheres_tristis/663069.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Corvus_splendens",
+      "top5_correct": true
+    },
+    {
+      "file": "Acridotheres_tristis/73134.mp3",
+      "expected": "Acridotheres_tristis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Anastomus_oscitans/856558.mp3",
+      "expected": "Anastomus_oscitans",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": false
+    },
+    {
+      "file": "Ardea_cinerea/1161045.mp3",
+      "expected": "Ardea_cinerea",
+      "error": "Use a readable recording with at least 3 seconds of audio."
+    },
+    {
+      "file": "Bubulcus_coromandus/83139.mp3",
+      "expected": "Bubulcus_coromandus",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Cinnyris_asiaticus/1159309.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Cinnyris_asiaticus/1159797.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Cinnyris_asiaticus/1160447.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Cinnyris_asiaticus/1160664.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Cinnyris_asiaticus/192005.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Cinnyris_asiaticus/369088.mp3",
+      "expected": "Cinnyris_asiaticus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Columba_livia/636632.mp3",
+      "expected": "Columba_livia",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Columba_livia/74355.mp3",
+      "expected": "Columba_livia",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Coracias_benghalensis/345160.mp3",
+      "expected": "Coracias_benghalensis",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": false
+    },
+    {
+      "file": "Coracias_benghalensis/432461.mp3",
+      "expected": "Coracias_benghalensis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Coracias_benghalensis/90657.mp3",
+      "expected": "Coracias_benghalensis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Corvus_splendens/163863.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Corvus_splendens",
+      "top5_correct": true
+    },
+    {
+      "file": "Corvus_splendens/187701.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Corvus_splendens/402455.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Corvus_splendens/409917.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Corvus_splendens",
+      "top5_correct": true
+    },
+    {
+      "file": "Corvus_splendens/409918.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Corvus_splendens",
+      "top5_correct": true
+    },
+    {
+      "file": "Corvus_splendens/744704.mp3",
+      "expected": "Corvus_splendens",
+      "predicted": "Corvus_splendens",
+      "top5_correct": true
+    },
+    {
+      "file": "Dicrurus_macrocercus/1003190.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": false
+    },
+    {
+      "file": "Dicrurus_macrocercus/1030549.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Dicrurus_macrocercus/1030550.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": false
+    },
+    {
+      "file": "Dicrurus_macrocercus/1160478.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Dicrurus_macrocercus/1160479.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Dicrurus_macrocercus/754307.mp3",
+      "expected": "Dicrurus_macrocercus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/1159460.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/1159781.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/1160176.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/1160748.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/575208.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Milvus_migrans",
+      "top5_correct": false
+    },
+    {
+      "file": "Halcyon_smyrnensis/676929.mp3",
+      "expected": "Halcyon_smyrnensis",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/1159580.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/208589.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Milvus_migrans",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/276714.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/583074.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Passer_domesticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/621033.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Acridotheres_tristis",
+      "top5_correct": false
+    },
+    {
+      "file": "Merops_orientalis/621034.mp3",
+      "expected": "Merops_orientalis",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": false
+    },
+    {
+      "file": "Milvus_migrans/208348.mp3",
+      "expected": "Milvus_migrans",
+      "predicted": "Milvus_migrans",
+      "top5_correct": true
+    },
+    {
+      "file": "Milvus_migrans/369321.mp3",
+      "expected": "Milvus_migrans",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Milvus_migrans/425062.mp3",
+      "expected": "Milvus_migrans",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Milvus_migrans/442334.mp3",
+      "expected": "Milvus_migrans",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": false
+    },
+    {
+      "file": "Orthotomus_sutorius/1030707.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": false
+    },
+    {
+      "file": "Orthotomus_sutorius/1030709.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Orthotomus_sutorius/149307.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": false
+    },
+    {
+      "file": "Orthotomus_sutorius/472857.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Orthotomus_sutorius/656017.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Orthotomus_sutorius",
+      "top5_correct": true
+    },
+    {
+      "file": "Orthotomus_sutorius/660402.mp3",
+      "expected": "Orthotomus_sutorius",
+      "predicted": "Orthotomus_sutorius",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/1159421.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/189202.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/334058.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/334059.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/577858.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Passer_domesticus/651792.mp3",
+      "expected": "Passer_domesticus",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Psittacula_krameri/1062334.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Acridotheres_tristis",
+      "top5_correct": true
+    },
+    {
+      "file": "Psittacula_krameri/207014.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Psittacula_krameri/680461.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Psittacula_krameri/831369.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Milvus_migrans",
+      "top5_correct": false
+    },
+    {
+      "file": "Psittacula_krameri/883589.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Psittacula_krameri/979519.mp3",
+      "expected": "Psittacula_krameri",
+      "predicted": "Corvus_splendens",
+      "top5_correct": false
+    },
+    {
+      "file": "Pycnonotus_cafer/1159395.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Passer_domesticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Pycnonotus_cafer/1160279.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Pycnonotus_cafer/157864.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": true
+    },
+    {
+      "file": "Pycnonotus_cafer/189091.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Pycnonotus_cafer/573349.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Pycnonotus_cafer/578600.mp3",
+      "expected": "Pycnonotus_cafer",
+      "predicted": "Pycnonotus_cafer",
+      "top5_correct": true
+    },
+    {
+      "file": "Streptopelia_decaocto/409713.mp3",
+      "expected": "Streptopelia_decaocto",
+      "predicted": "Cinnyris_asiaticus",
+      "top5_correct": false
+    },
+    {
+      "file": "Streptopelia_decaocto/440355.mp3",
+      "expected": "Streptopelia_decaocto",
+      "predicted": "Milvus_migrans",
+      "top5_correct": true
+    },
+    {
+      "file": "Streptopelia_decaocto/460273.mp3",
+      "expected": "Streptopelia_decaocto",
+      "predicted": "Streptopelia_decaocto",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/1030949.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/184288.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/214021.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/215866.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/460206.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    },
+    {
+      "file": "Vanellus_indicus/665480.mp3",
+      "expected": "Vanellus_indicus",
+      "predicted": "Vanellus_indicus",
+      "top5_correct": true
+    }
+  ]
+}

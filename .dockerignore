@@ -1,0 +1,9 @@
+.git
+venv
+.venv
+__pycache__
+**/__pycache__
+data
+_smoke_test
+work
+*.log

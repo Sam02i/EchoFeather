@@ -155,11 +155,11 @@ def main():
     print(f"BirdNET accuracy:     {bn_acc:.3f}")
     if your_acc > bn_acc:
         print(f"-> Your model beats BirdNET by {your_acc - bn_acc:.3f} on this test set "
-              f"(smaller species list + region-specific training data likely why).")
+            f"(smaller species list + region-specific training data likely why).")
     elif your_acc < bn_acc:
         print(f"-> BirdNET beats your model by {bn_acc - your_acc:.3f} "
-              f"(expected: it's trained on ~6,000 species with far more data per class). "
-              f"Report this honestly -- explain the gap, don't hide it.")
+            f"(expected: it's trained on ~6,000 species with far more data per class). "
+            f"Report this honestly -- explain the gap, don't hide it.")
     else:
         print("-> Dead even. Worth digging into per-species results to see where each wins.")
     print(f"Full per-clip results: {args.out_csv}")

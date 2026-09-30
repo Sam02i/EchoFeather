@@ -9,3 +9,8 @@ pandas
 matplotlib
 tqdm
 Pillow
+
+fastapi
+uvicorn
+python-multipart
+httpx

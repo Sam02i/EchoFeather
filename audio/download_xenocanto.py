@@ -83,8 +83,8 @@ def main():
     ap.add_argument("--max_per_species", type=int, default=40)
     ap.add_argument("--sleep", type=float, default=1.0, help="politeness delay between downloads")
     ap.add_argument("--api_key", default=os.environ.get("XC_API_KEY"),
-                     help="required; get one at https://xeno-canto.org/account, "
-                          "or set env var XC_API_KEY")
+                    help="required; get one at https://xeno-canto.org/account, "
+                        "or set env var XC_API_KEY")
     args = ap.parse_args()
 
     if not args.api_key:

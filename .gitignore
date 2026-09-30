@@ -6,3 +6,5 @@ data/
 *.pth
 *.log
 runs/**/*.pth
+
+work/
